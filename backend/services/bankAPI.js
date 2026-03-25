@@ -1,6 +1,8 @@
-import { fetchMockTransactions } from '../services/bankAPI.js';
+import axios from "axios";
 
-export const getTransactions = (req, res) => {
-  const data = fetchMockTransactions();
-  res.json(data);
+const BANK_API_URL = "http://localhost:4000/transactions";
+
+export const fetchMockTransactions = async () => {
+  const response = await axios.get(BANK_API_URL);
+  return response.data;
 };

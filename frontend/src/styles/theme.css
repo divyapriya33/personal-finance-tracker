@@ -1,0 +1,92 @@
+/* ===== GLOBAL ===== */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f6fa;
+  color: #222;
+}
+
+.app {
+  padding: 20px;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  background: #1f2937;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== BUTTONS ===== */
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ===== INPUTS ===== */
+
+input,
+select {
+  padding: 7px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+}
+
+/* ===== CARDS ===== */
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* ===== DARK MODE ===== */
+
+.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.dark .navbar {
+  background: #020617;
+}
+
+.dark .card {
+  background: #020617;
+  color: white;
+}
+
+.dark input,
+.dark select {
+  background: #020617;
+  color: white;
+  border: 1px solid #334155;
+}
+
+.dark button {
+  background: #6366f1;
+}

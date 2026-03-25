@@ -1,0 +1,36 @@
+{
+  "sbiTransactions": [
+    { "description": "Salary Credit", "amount": 30000, "category": "Income", "date": "2026-01-01" },
+    { "description": "Rent", "amount": -8000, "category": "Bills", "date": "2026-01-02" },
+    { "description": "Groceries", "amount": -2500, "category": "Food", "date": "2026-01-05" },
+    { "description": "Electric Bill", "amount": -1500, "category": "Bills", "date": "2026-01-10" },
+    { "description": "Petrol", "amount": -1200, "category": "Transport", "date": "2026-01-15" }
+  ],
+
+  "hdfcTransactions": [
+    { "description": "Salary Credit", "amount": 30000, "category": "Income", "date": "2026-02-01" },
+    { "description": "Rent", "amount": -8000, "category": "Bills", "date": "2026-02-02" },
+    { "description": "Dining Out", "amount": -1500, "category": "Food", "date": "2026-02-05" },
+    { "description": "Amazon Purchase", "amount": -2500, "category": "Shopping", "date": "2026-02-10" },
+    { "description": "Uber Ride", "amount": -900, "category": "Transport", "date": "2026-02-15" }
+  ],
+
+  "iciciTransactions": [
+    { "description": "Salary Credit", "amount": 30000, "category": "Income", "date": "2026-03-01" },
+    { "description": "Rent", "amount": -8000, "category": "Bills", "date": "2026-03-02" },
+    { "description": "Groceries", "amount": -3500, "category": "Food", "date": "2026-03-05" },
+    { "description": "Flipkart Shopping", "amount": -4000, "category": "Shopping", "date": "2026-03-10" },
+    { "description": "Internet Bill", "amount": -1200, "category": "Bills", "date": "2026-03-12" },
+    { "description": "Petrol", "amount": -1500, "category": "Transport", "date": "2026-03-15" }
+  ],
+
+  "axisTransactions": [
+    { "description": "Salary Credit", "amount": 30000, "category": "Income", "date": "2026-04-01" },
+    { "description": "Rent", "amount": -8000, "category": "Bills", "date": "2026-04-02" },
+    { "description": "Groceries", "amount": -4000, "category": "Food", "date": "2026-04-05" },
+    { "description": "Zomato Orders", "amount": -2000, "category": "Food", "date": "2026-04-08" },
+    { "description": "Shopping Spree", "amount": -5000, "category": "Shopping", "date": "2026-04-10" },
+    { "description": "Electric Bill", "amount": -1800, "category": "Bills", "date": "2026-04-12" },
+    { "description": "Bike Service", "amount": -2000, "category": "Transport", "date": "2026-04-15" }
+  ]
+}

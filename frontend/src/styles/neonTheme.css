@@ -1,0 +1,116 @@
+/* ===== GLOBAL BACKGROUND ===== */
+
+body {
+  background: radial-gradient(circle at top, #1a002b, #05000a);
+  color: #e5d9ff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== GLASS CARD ===== */
+
+.neon-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(160,0,255,0.25);
+  transition: 0.3s ease;
+}
+
+.neon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(200,0,255,0.6);
+}
+
+/* ===== SUMMARY CARD ===== */
+
+.summary-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.summary-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(180,0,255,0.5);
+}
+
+/* ===== ICON CIRCLE ===== */
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* ===== GRADIENT ICON COLORS ===== */
+
+.icon-green {
+  background: linear-gradient(135deg,#00ff87,#00c853);
+}
+
+.icon-red {
+  background: linear-gradient(135deg,#ff1744,#d50000);
+}
+
+.icon-blue {
+  background: linear-gradient(135deg,#2979ff,#00b0ff);
+}
+
+.icon-yellow {
+  background: linear-gradient(135deg,#ffea00,#ff9100);
+}
+
+.icon-purple {
+  background: linear-gradient(135deg,#d500f9,#651fff);
+}
+
+/* ===== NAVBAR ===== */
+
+.neon-navbar {
+  background: linear-gradient(90deg,#220033,#0a0018);
+  box-shadow: 0 0 25px rgba(150,0,255,0.3);
+}
+
+/* ===== INPUT FIELDS ===== */
+
+.neon-input {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.neon-input:focus {
+  outline: none;
+  border: 1px solid #d500f9;
+  box-shadow: 0 0 10px #d500f9;
+}
+
+/* ===== BUTTON ===== */
+
+.neon-btn {
+  background: linear-gradient(135deg,#8e2de2,#ff00cc);
+  padding: 10px 18px;
+  border-radius: 12px;
+  color: white;
+  transition: 0.3s;
+}
+
+.neon-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #d500f9;
+}

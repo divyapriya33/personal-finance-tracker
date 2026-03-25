@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ================= GLOBAL BODY ================= */
+
+body {
+  @apply bg-[#0b0f1a] text-white;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* ================= INPUT FIELD ================= */
+
+.input {
+  @apply w-full px-4 py-3 rounded-xl border transition
+  bg-[#121826] border-purple-800/40 text-white
+  focus:outline-none focus:border-purple-500
+  focus:ring-1 focus:ring-purple-500/40;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.premium-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 40px;
+
+  backdrop-filter: blur(14px);
+  background: rgba(15, 15, 30, 0.65);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+
+/* ================= LOGO ================= */
+
+.premium-logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #c084fc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.premium-logo:hover {
+  text-shadow: 0 0 10px #c084fc;
+}
+
+
+/* ================= NAV LINKS ================= */
+
+.premium-links {
+  display: flex;
+  gap: 32px;
+}
+
+.premium-link {
+  position: relative;
+  font-weight: 500;
+  color: #cbd5f5;
+  transition: 0.3s;
+}
+
+.premium-link:hover {
+  color: #c084fc;
+}
+
+/* Active underline neon */
+.premium-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(90deg, #a855f7, #6366f1);
+  border-radius: 3px;
+
+  box-shadow: 0 0 10px #a855f7;
+}
+
+
+/* ================= PROFILE AVATAR ================= */
+
+.premium-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  color: white;
+  font-weight: bold;
+
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.premium-avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #a855f7;
+}
+
+
+/* ================= DROPDOWN ================= */
+
+.premium-dropdown {
+  position: absolute;
+  right: 0;
+  top: 55px;
+
+  width: 220px;
+
+  background: rgba(20, 20, 35, 0.95);
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(168, 85, 247, 0.25);
+
+  border-radius: 12px;
+  padding: 12px;
+
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.25);
+  animation: fadeSlide 0.3s ease;
+}
+
+.dropdown-user {
+  font-weight: bold;
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.dropdown-item {
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.dropdown-item:hover {
+  background: rgba(168, 85, 247, 0.2);
+}
+
+.logout {
+  color: #f87171;
+}
+
+.add {
+  color: #a855f7;
+}
+
+
+/* ================= NEON CARD ================= */
+
+.neon-card {
+  @apply rounded-2xl p-6;
+
+  background: rgba(20, 20, 35, 0.75);
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(168, 85, 247, 0.2);
+
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.12);
+}
+
+
+/* ================= PAGE CONTAINER ================= */
+
+.page-container {
+  @apply p-6 space-y-6;
+}
+
+
+/* ================= TOAST FIX ================= */
+
+.react-hot-toast {
+  z-index: 9999 !important;
+}
+
+
+/* ================= PREMIUM INPUT ================= */
+
+.premium-input {
+  @apply w-full px-4 py-3 rounded-xl
+  bg-[#121826] text-white
+  border border-purple-800/40
+  focus:border-purple-500
+  transition;
+}
+
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== NEON DATEPICKER ===== */
+
+.neon-calendar .react-datepicker {
+  background-color: #121826;
+  border: 1px solid rgba(168,85,247,0.4);
+  color: white;
+  box-shadow: 0 0 25px rgba(168,85,247,0.25);
+}
+
+.neon-calendar .react-datepicker__header {
+  background-color: #1e1b4b;
+  border-bottom: 1px solid rgba(168,85,247,0.4);
+}
+
+.neon-calendar .react-datepicker__current-month {
+  color: #c4b5fd;
+}
+
+.neon-calendar .react-datepicker__month-text {
+  color: #e9d5ff;
+}
+
+.neon-calendar .react-datepicker__month-text:hover {
+  background-color: #a855f7;
+  color: white;
+  border-radius: 8px;
+}
+
+.neon-calendar .react-datepicker__month--selected {
+  background: linear-gradient(to right, #a855f7, #ec4899);
+  border-radius: 8px;
+  color: white;
+}
+
+.react-datepicker-popper {
+  z-index: 99999 !important;
+}
